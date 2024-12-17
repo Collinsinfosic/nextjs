@@ -1,3 +1,6 @@
+import {inter} from './ui/fonts';
+import {lusitana} from './ui/fonts'
+import './ui/global.css'
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      {/* antialiased标识模型抗锯齿 */}
+      <body >{children}</body>
     </html>
   );
 }
